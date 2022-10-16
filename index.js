@@ -8,6 +8,7 @@ app.use(express.json());
 // app.use('/auth', authRoutes)
 
 const usersRoutes = require("./routes/users.routes");
+
 app.use("/users", usersRoutes);
 
 app.listen(process.env.PORT, (err) => {
