@@ -34,6 +34,7 @@ const userSchema = new mongoose.Schema({
   user_type: {
     type: String,
     required: "user_type is required",
+    enum: ["company", "user"],
   },
 });
 
