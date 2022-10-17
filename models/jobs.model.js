@@ -7,11 +7,11 @@ const jobSchema = new mongoose.Schema({
   },
   title: {
     type: String,
-    default: "I am an education title",
+    default: "I am a job title",
   },
   body: {
     type: String,
-    default: "I am an education body",
+    default: "I am a job body",
   },
 });
 
