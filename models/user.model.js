@@ -31,10 +31,10 @@ const userSchema = new mongoose.Schema({
   cv: {
     type: String,
   },
-  // user_type: {
-  //   type: mongoose.Schema.Types.ObjectId,
-  //   ref: "UserType",
-  // },
+  user_type: {
+    type: String,
+    required: "user_type is required",
+  },
 });
 
 const User = mongoose.model("User", userSchema);

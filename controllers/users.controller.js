@@ -1,7 +1,7 @@
 const UserModel = require("../models/user.model");
 
 const createUser = async (req, res) => {
-  UserModel.create(req.body)
+  await UserModel.create(req.body)
     .then((user) => res.send(user))
     .catch((err) => res.status(400).send(err));
 };
